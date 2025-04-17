@@ -21,4 +21,5 @@ __all__ = [
     "ToolCollection",
     "CreateChatCompletion",
     "PlanningTool",
+    "MySQLExecuteTool",
 ]
