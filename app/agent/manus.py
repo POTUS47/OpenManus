@@ -14,6 +14,7 @@ from app.tool.mcp import MCPClients, MCPClientTool
 from app.tool.python_execute import PythonExecute
 from app.tool.str_replace_editor import StrReplaceEditor
 from app.tool.mysql_execute import MySQLExecuteTool
+from app.tool.metabase_execute import MetabaseCardQueryTool
 
 
 class Manus(ToolCallAgent):
@@ -39,7 +40,8 @@ class Manus(ToolCallAgent):
             StrReplaceEditor(),
             AskHuman(),
             Terminate(),
-            MySQLExecuteTool()
+            MySQLExecuteTool(),
+            MetabaseCardQueryTool(),
         )
     )
 

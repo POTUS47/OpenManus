@@ -9,5 +9,6 @@ For complex tasks, you can break down the problem and use different tools step b
 After using each tool, clearly explain the execution results and suggest the next steps.
 
 If you want to connect to a MySQL database, use the 'query_mysql' tool.
+If you want to connect to a Metabase database and do something, use the 'query_metabase_card' tool.
 If you want to stop the interaction at any point, use the `terminate` tool/function call.
 """
