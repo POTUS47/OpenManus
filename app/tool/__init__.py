@@ -22,4 +22,5 @@ __all__ = [
     "CreateChatCompletion",
     "PlanningTool",
     "MySQLExecuteTool",
+    "MetabaseCardQueryTool"
 ]
