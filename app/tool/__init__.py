@@ -9,6 +9,8 @@ from app.tool.terminate import Terminate
 from app.tool.tool_collection import ToolCollection
 from app.tool.web_search import WebSearch
 from app.tool.metabase_tools.card_query import MetabaseCardQueryTool
+from app.tool.metabase_tools.add_database import MetabaseAddDatabaseTool
+from app.tool.metabase_tools.create_card import MetabaseCreateCardTool
 
 
 __all__ = [
@@ -23,5 +25,7 @@ __all__ = [
     "CreateChatCompletion",
     "PlanningTool",
     "MySQLExecuteTool",
-    "MetabaseCardQueryTool"
+    "MetabaseCardQueryTool",
+    "MetabaseAddDatabaseTool",
+    "MetabaseCreateCardTool",
 ]

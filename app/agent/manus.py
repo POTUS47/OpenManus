@@ -16,6 +16,8 @@ from app.tool.str_replace_editor import StrReplaceEditor
 from app.tool.mysql_execute import MySQLExecuteTool
 from app.tool import (
     MetabaseCardQueryTool,
+    MetabaseAddDatabaseTool,
+    MetabaseCreateCardTool,
 )
 
 
@@ -44,6 +46,8 @@ class Manus(ToolCallAgent):
             Terminate(),
             MySQLExecuteTool(),
             MetabaseCardQueryTool(),
+            MetabaseAddDatabaseTool(),
+            MetabaseCreateCardTool(),
         )
     )
 
