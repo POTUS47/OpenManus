@@ -13,6 +13,7 @@ For complex tasks, break them down into multiple steps and call the tools step b
 After using each tool, clearly explain the execution results and suggest the next steps.
 
 If you want to connect to a MySQL database, use the 'query_mysql' tool.
+If you want to search for information on the web, use the 'baidu_search' tool.
 If you want to add a new database to Metabase, use the 'metabase_add_database' tool.
 If you want to create a new card in Metabase, use the 'create_metabase_card' tool.
 If you want to execute a Metabase card and get the result, use the 'metabase_query_card' tool.

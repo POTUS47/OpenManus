@@ -8,6 +8,7 @@ from app.config import config
 from app.logger import logger
 from app.prompt.manus import NEXT_STEP_PROMPT, SYSTEM_PROMPT
 from app.tool import Terminate, ToolCollection
+from app.tool.BaiduSearch import BaiduSearchTool
 from app.tool.ask_human import AskHuman
 from app.tool.browser_use_tool import BrowserUseTool
 from app.tool.mcp import MCPClients, MCPClientTool
@@ -48,6 +49,7 @@ class Manus(ToolCallAgent):
             MetabaseCardQueryTool(),
             MetabaseAddDatabaseTool(),
             MetabaseCreateCardTool(),
+            BaiduSearchTool(),  # 新增加的工具函数
         )
     )
 

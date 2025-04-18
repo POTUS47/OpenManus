@@ -680,6 +680,8 @@ class LLM:
             Exception: For unexpected errors
         """
         try:
+            # logger.info("thinking input messages:")
+            # logger.info(f"{messages}, {system_msgs},{tools},{tool_choice},{temperature}")
             # Validate tool_choice
             if tool_choice not in TOOL_CHOICE_VALUES:
                 raise ValueError(f"Invalid tool_choice: {tool_choice}")

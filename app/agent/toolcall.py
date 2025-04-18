@@ -54,6 +54,10 @@ class ToolCallAgent(ReActAgent):
                 tools=self.available_tools.to_params(),
                 tool_choice=self.tool_choices,
             )
+            logger.info(f"{self.name} received response:")
+            logger.info(f"{response.tool_calls}")
+            if getattr(response, 'tool_calls', None):
+                logger.info(f"Tool calls: {[call.function.name for call in response.tool_calls]}")
         except ValueError:
             raise
         except Exception as e:
