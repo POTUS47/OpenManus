@@ -20,6 +20,8 @@ from app.tool import (
     MetabaseAddDatabaseTool,
     MetabaseCreateCardTool,
 )
+from app.tool.summarize_result import SummarizeResultTool
+from app.tool.etl_clean import ETLCleanTool
 
 
 class Manus(ToolCallAgent):
@@ -49,7 +51,9 @@ class Manus(ToolCallAgent):
             MetabaseCardQueryTool(),
             MetabaseAddDatabaseTool(),
             MetabaseCreateCardTool(),
-            BaiduSearchTool(),  # 新增加的工具函数
+            BaiduSearchTool(),
+            SummarizeResultTool(),  # 新增结果总结工具
+            ETLCleanTool(),  # 新增ETL清洗工具
         )
     )
 
